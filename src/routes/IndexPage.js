@@ -1,21 +1,39 @@
+IndexPage
+
 import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
+import {
+  Layout,
+  Row,
+  Col,
+  Button,
+} from 'antd';
 
-function IndexPage() {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
-    </div>
-  );
+class IndexPage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.dispatch = props.dispatch;
+
+    this.state = {
+    };
+  }
+
+  render() {
+    const { } = this.props;
+
+    return (
+      <div>
+      </div>
+    );
+  }
 }
 
-IndexPage.propTypes = {
-};
+function mapStateToProps(state) {
+  return {
+    
+  };
+}
 
-export default connect()(IndexPage);
+export default connect(mapStateToProps)(IndexPage);
