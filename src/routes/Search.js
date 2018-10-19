@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import GoogleMap from '../components/GoogleMap';
+import styles from './Search.css';
 
 import {
   Layout,
@@ -9,7 +9,7 @@ import {
   Button,
 } from 'antd';
 
-class IndexPage extends React.Component {
+class Search extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -23,7 +23,7 @@ class IndexPage extends React.Component {
     const { } = this.props;
 
     return (
-      <GoogleMap />
+      <div></div>
     );
   }
 }
@@ -34,4 +34,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(IndexPage);
+export default connect(mapStateToProps)(Search);
